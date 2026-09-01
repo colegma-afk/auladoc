@@ -416,19 +416,19 @@
           "lessons": [
             {
               "id": "c5-m1-l1",
-              "title": "Neurociencias aplicadas a la enseñanza · Clase 3: La Emoción (video completo)",
-              "minutes": 36,
-              "video": "/media/neurociencia-v3.mp4",
-              "description": "Clase completa en video sobre las neurociencias aplicadas a la enseñanza en la escuela primaria. Este módulo cubre la emoción: amígdala, clima emocional, estrés, curiosidad, juego y prácticas guiadas con pausas de reflexión.",
-              "material": "La neuroeducación une neurociencia, psicología y pedagogía. Cuidado con los neuromitos: no usamos solo el 10% del cerebro, no hay estilos de aprendizaje \"visual/auditivo/kinestésico\" demostrados como se popularizan. Material: guía de neuromitos y cómo refutarlos."
+              "title": "Clase 1 · La Atención",
+              "minutes": 38,
+              "video": "/media/neurociencia-v1.mp4",
+              "description": "Las tres redes atencionales, el desarrollo de la atención en la infancia y estrategias para proteger el foco: bloques, pausas activas, respiración 4-6 y gestión de pantallas.",
+              "material": "Video completo de 38 minutos con 4 prácticas guiadas. Descarga la guía: https://aulaeduc.onrender.com/media/materiales/material-clase1-atencion.pdf"
             },
             {
               "id": "c5-m1-l2",
-              "title": "Atención, memoria y emoción",
-              "minutes": 13,
-              "video": "https://storage.googleapis.com/gtv-videos-bucket/sample/ForBiggerBlazes.mp4",
-              "description": "Cómo funciona la atención selectiva, la memoria de trabajo y el rol de la emoción en el aprendizaje.",
-              "material": "La atención dura entre 10 y 15 minutos sostenida; luego necesita un cambio de actividad o un \"gancho\" emocional. La emoción marca qué se consolida en memoria a largo plazo: las experiencias con carga emocional se recuerdan más. Material: cronograma de clase neuroamigable."
+              "title": "Clase 2 · La Memoria",
+              "minutes": 35,
+              "video": "/media/neurociencia-v2.mp4",
+              "description": "Cómo se forma, consolida y recupera la memoria: práctica espaciada, recuperación activa, el error como aprendizaje, mnemotecnias y evaluación amable.",
+              "material": "Video completo de 35 minutos con 4 prácticas guiadas. Descarga la guía: https://aulaeduc.onrender.com/media/materiales/material-clase2-memoria.pdf"
             }
           ]
         },
@@ -438,11 +438,11 @@
           "lessons": [
             {
               "id": "c5-m2-l1",
-              "title": "El cerebro adolescente",
-              "minutes": 9,
-              "video": "https://storage.googleapis.com/gtv-videos-bucket/sample/ForBiggerEscapes.mp4",
-              "description": "Poda sináptica, sistema de recompensa y sueño: por qué los adolescentes aprenden distinto.",
-              "material": "El cerebro adolescente tiene un sistema de recompensa hiperactivo y una corteza prefrontal en construcción: por eso el riesgo, la novedad y lo social los motivan tanto. Usa la novedad y el aprendizaje entre pares a tu favor. Material: infografía del cerebro adolescente para compartir con colegas."
+              "title": "Clase 3 · La Emoción",
+              "minutes": 36,
+              "video": "/media/neurociencia-v3.mp4",
+              "description": "La amígdala y el clima emocional seguro: estrés, curiosidad, música, semáforo emocional, check-in, menú de calma, bienestar docente y convivencia.",
+              "material": "Video completo de 36 minutos con semáforo emocional guiado y 4 prácticas. Descarga la guía: https://aulaeduc.onrender.com/media/materiales/material-clase3-emocion.pdf"
             },
             {
               "id": "c5-m2-l2",

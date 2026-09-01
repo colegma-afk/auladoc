@@ -145,14 +145,14 @@ const courses = [
     description: 'Lo que todo docente debería saber sobre el cerebro que aprende: atención, memoria, emoción y estrategias neurodidácticas basadas en evidencia para mejorar tus clases.',
     modules: [
       { id: 'c5-m1', title: 'El cerebro que aprende', lessons: [
-        V('c5-m1-l1', 'Bases de la neuroeducación', 10, v(9), 'Qué es (y qué no es) la neuroeducación. Mitos frecuentes y evidencias sólidas.',
-          'La neuroeducación une neurociencia, psicología y pedagogía. Cuidado con los neuromitos: no usamos solo el 10% del cerebro, no hay estilos de aprendizaje "visual/auditivo/kinestésico" demostrados como se popularizan. Material: guía de neuromitos y cómo refutarlos.'),
-        V('c5-m1-l2', 'Atención, memoria y emoción', 13, v(0), 'Cómo funciona la atención selectiva, la memoria de trabajo y el rol de la emoción en el aprendizaje.',
-          'La atención dura entre 10 y 15 minutos sostenida; luego necesita un cambio de actividad o un "gancho" emocional. La emoción marca qué se consolida en memoria a largo plazo: las experiencias con carga emocional se recuerdan más. Material: cronograma de clase neuroamigable.'),
+        V('c5-m1-l1', 'Clase 1 · La Atención', 38, '/media/neurociencia-v1.mp4', 'Las tres redes atencionales, el desarrollo de la atención en la infancia y estrategias para proteger el foco: bloques, pausas activas, respiración 4-6 y gestión de pantallas.',
+          'Video completo de 38 minutos con 4 prácticas guiadas. Descarga la guía: https://aulaeduc.onrender.com/media/materiales/material-clase1-atencion.pdf'),
+        V('c5-m1-l2', 'Clase 2 · La Memoria', 35, '/media/neurociencia-v2.mp4', 'Cómo se forma, consolida y recupera la memoria: práctica espaciada, recuperación activa, el error como aprendizaje, mnemotecnias y evaluación amable.',
+          'Video completo de 35 minutos con 4 prácticas guiadas. Descarga la guía: https://aulaeduc.onrender.com/media/materiales/material-clase2-memoria.pdf'),
       ]},
       { id: 'c5-m2', title: 'Aplicación en el aula', lessons: [
-        V('c5-m2-l1', 'El cerebro adolescente', 9, v(1), 'Poda sináptica, sistema de recompensa y sueño: por qué los adolescentes aprenden distinto.',
-          'El cerebro adolescente tiene un sistema de recompensa hiperactivo y una corteza prefrontal en construcción: por eso el riesgo, la novedad y lo social los motivan tanto. Usa la novedad y el aprendizaje entre pares a tu favor. Material: infografía del cerebro adolescente para compartir con colegas.'),
+        V('c5-m2-l1', 'Clase 3 · La Emoción', 36, '/media/neurociencia-v3.mp4', 'La amígdala y el clima emocional seguro: estrés, curiosidad, música, semáforo emocional, check-in, menú de calma, bienestar docente y convivencia.',
+          'Video completo de 36 minutos con semáforo emocional guiado y 4 prácticas. Descarga la guía: https://aulaeduc.onrender.com/media/materiales/material-clase3-emocion.pdf'),
         V('c5-m2-l2', 'Estrategias neurodidácticas', 12, v(2), 'Práctica espaciada, recuperación activa, intercalado y sueño: las 4 estrategias con más evidencia.',
           'Cuatro estrategias con respaldo científico: 1) practicar en sesiones espaciadas, 2) recuperar activamente (autoevaluarse en vez de releer), 3) intercalar temas, 4) respetar el sueño (se consolida la memoria al dormir). Material: planificador semanal de práctica espaciada.'),
       ]},
