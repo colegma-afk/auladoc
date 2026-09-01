@@ -424,9 +424,9 @@
             },
             {
               "id": "c5-m1-l2",
-              "title": "Clase 2 · La Memoria",
+              "title": "Clase 2 · La Memoria (próximamente)",
               "minutes": 35,
-              "video": "/media/neurociencia-v2.mp4",
+              "video": "https://storage.googleapis.com/gtv-videos-bucket/sample/ForBiggerBlazes.mp4",
               "description": "Cómo se forma, consolida y recupera la memoria: práctica espaciada, recuperación activa, el error como aprendizaje, mnemotecnias y evaluación amable.",
               "material": "Video completo de 35 minutos con 4 prácticas guiadas. Descarga la guía: https://aulaeduc.onrender.com/media/materiales/material-clase2-memoria.pdf"
             }
