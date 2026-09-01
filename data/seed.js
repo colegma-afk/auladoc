@@ -1,0 +1,208 @@
+// ============================================================
+// AulaDoc — Datos de ejemplo (se usan si no existe data/db.json)
+// ============================================================
+
+const V = (id, title, minutes, video, description, material) => ({
+  id, title, minutes, video,
+  description,
+  material: material || description
+});
+
+// Videos de demostración (dominio público / muestra)
+const VIDS = [
+  'https://storage.googleapis.com/gtv-videos-bucket/sample/ForBiggerBlazes.mp4',
+  'https://storage.googleapis.com/gtv-videos-bucket/sample/ForBiggerEscapes.mp4',
+  'https://storage.googleapis.com/gtv-videos-bucket/sample/ForBiggerFun.mp4',
+  'https://storage.googleapis.com/gtv-videos-bucket/sample/ForBiggerJoyrides.mp4',
+  'https://storage.googleapis.com/gtv-videos-bucket/sample/ForBiggerMeltdowns.mp4',
+  'https://storage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4',
+  'https://storage.googleapis.com/gtv-videos-bucket/sample/ElephantsDream.mp4',
+  'https://storage.googleapis.com/gtv-videos-bucket/sample/Sintel.mp4',
+  'https://storage.googleapis.com/gtv-videos-bucket/sample/TearsOfSteel.mp4',
+  '/media/neurociencia-v3.mp4'
+];
+const v = i => VIDS[i % VIDS.length];
+
+const users = [
+  { id: 'u-admin',  name: 'Sofía Herrera',  email: 'admin@auladoc.cl',   password: '1234B',   role: 'admin',       createdAt: '2026-01-05T10:00:00.000Z' },
+  { id: 'u-maria',  name: 'María González', email: 'maria@auladoc.cl',   password: 'docente123', role: 'instructor',  createdAt: '2026-01-12T10:00:00.000Z' },
+  { id: 'u-pedro',  name: 'Pedro Ramírez',  email: 'pedro@auladoc.cl',   password: 'docente123', role: 'instructor',  createdAt: '2026-01-12T10:00:00.000Z' },
+  { id: 'u-carlos', name: 'Carlos Pérez',   email: 'carlos@auladoc.cl',  password: 'alumno123',  role: 'colaborador', createdAt: '2026-02-02T10:00:00.000Z' },
+  { id: 'u-ana',    name: 'Ana Torres',     email: 'ana@auladoc.cl',     password: 'alumno123',  role: 'colaborador', createdAt: '2026-02-10T10:00:00.000Z' },
+  { id: 'u-luis',   name: 'Luis Fuentes',   email: 'luis@auladoc.cl',    password: 'alumno123',  role: 'colaborador', createdAt: '2026-03-01T10:00:00.000Z' },
+  { id: 'u-valen',  name: 'Valentina Rojas',email: 'valentina@auladoc.cl', password: 'alumno123', role: 'colaborador', createdAt: '2026-03-18T10:00:00.000Z' }
+];
+
+const courses = [
+  {
+    id: 'c1', title: 'Metodologías Activas para el Aula Moderna',
+    category: 'Pedagogía', level: 'Intermedio', hours: 12,
+    cover: '/img/covers/c1.jpg', instructorId: 'u-maria', published: true, createdAt: '2026-01-15T10:00:00.000Z',
+    description: 'Aprende a diseñar experiencias de aprendizaje centradas en el estudiante: aprendizaje basado en proyectos, gamificación y trabajo colaborativo. Un curso práctico con ejemplos aplicables a cualquier asignatura y nivel educativo.',
+    modules: [
+      { id: 'c1-m1', title: 'Fundamentos del aprendizaje activo', lessons: [
+        V('c1-m1-l1', '¿Qué son las metodologías activas?', 12, v(0), 'Conceptos clave, origen y evolución de las metodologías activas y su impacto en el aprendizaje.',
+          'El aprendizaje activo sitúa al estudiante en el centro del proceso: investiga, discute, crea y reflexiona. En esta lección revisa el marco conceptual, la evidencia sobre su efectividad y ejemplos rápidos de aplicación: think-pair-share, aula invertida y estudio de caso. Pregúntate: ¿qué porcentaje de tu clase actual es protagonizada por tus estudiantes?'),
+        V('c1-m1-l2', 'Del aula tradicional al aula activa', 10, v(1), 'Cómo rediseñar el rol del docente y la estructura de la clase paso a paso.',
+          'La transición no es un salto, es un rediseño progresivo: 1) Revisa qué momentos de tu clase son expositivos y conviértelos en indagación guiada. 2) Anticipa preguntas de los estudiantes en vez de dar respuestas. 3) Rediseña el espacio físico o virtual para favorecer el diálogo. Material: plantilla "Plan de transición" con 12 microcambios semanales.'),
+        V('c1-m1-l3', 'Rol docente y del estudiante', 8, v(2), 'Nuevas responsabilidades: el docente como facilitador y el estudiante como agente de su aprendizaje.',
+          'El docente facilitador define el qué y el para qué, y el estudiante decide el cómo. En la práctica: acuerda criterios de éxito con el curso, entrega autonomía progresiva y utiliza la retroalimentación como motor. Material: rúbrica de autoevaluación del rol del estudiante.'),
+      ]},
+      { id: 'c1-m2', title: 'Aprendizaje Basado en Proyectos (ABP)', lessons: [
+        V('c1-m2-l1', 'Diseño de un proyecto significativo', 15, v(3), 'Las claves de un buen proyecto: pregunta desafiante, autenticidad, voz y elección del estudiante.',
+          'Un buen proyecto parte de una pregunta que no se responde con una búsqueda de Google: "¿Cómo podemos reducir el desperdicio de alimentos en nuestra comuna?". Evalúa cada proyecto con los criterios de oro del ABP: autenticidad, rigor académico, voz del estudiante, reflexión, crítica y revisión, producto público. Material: guía de diseño + banco de 20 preguntas conductoras por asignatura.'),
+        V('c1-m2-l2', 'Evaluación dentro del ABP', 10, v(4), 'Evaluar proceso y producto: rúbricas, hitos y retroalimentación durante el proyecto.',
+          'Evalúa en tres momentos: arranque (diagnóstico), proceso (hitos con retroalimentación) y producto final (rúbrica pública). Define hitos semanales con entregas breves para evitar la acumulación de trabajo. Material: ejemplo de cronograma de proyecto de 6 semanas con hitos evaluables.'),
+        V('c1-m2-l3', 'ABP con herramientas digitales', 9, v(5), 'Apoyos digitales para gestionar proyectos: tableros, documentos colaborativos y portfolios.',
+          'Usa tableros Kanban para gestionar tareas del equipo, documentos colaborativos para co-crear, y portfolios digitales para evidenciar el proceso. La tecnología debe servir a la colaboración, no reemplazarla. Material: checklist de herramientas recomendadas según objetivo pedagógico.'),
+      ]},
+      { id: 'c1-m3', title: 'Gamificación en el aula', lessons: [
+        V('c1-m3-l1', 'Elementos del juego aplicados al aprendizaje', 11, v(6), 'Puntos, insignias, niveles y narrativa: qué funciona, qué cansa y cómo evitar la gamificación superficial.',
+          'La gamificación profunda usa narrativa, desafíos progresivos y elección del estudiante, no solo puntos e insignias. Regla de oro: el juego debe apoyar el objetivo de aprendizaje, no competir con él. Material: matriz de elementos de juego y cuándo usarlos.'),
+        V('c1-m3-l2', 'Diseñando una experiencia gamificada', 14, v(7), 'Metodología paso a paso para gamificar una unidad completa, con ejemplos reales.',
+          'Sigue 5 pasos: 1) objetivo de aprendizaje, 2) narrativa que conecte con el contexto, 3) mecánicas (desafíos, misiones, jefes finales), 4) sistema de recompensas no extrínsecas excesivas, 5) evaluación. Material: plantilla de diseño gamificado + ejemplo completo de una unidad de historia.'),
+      ]},
+    ]
+  },
+  {
+    id: 'c2', title: 'Herramientas Digitales para la Enseñanza',
+    category: 'Tecnología Educativa', level: 'Básico', hours: 10,
+    cover: '/img/covers/c2.jpg', instructorId: 'u-pedro', published: true, createdAt: '2026-01-20T10:00:00.000Z',
+    description: 'Domina las herramientas digitales esenciales para enseñar hoy: entornos virtuales, presentaciones interactivas, video educativo, evaluaciones en línea e inteligencia artificial como asistente docente. Sin tecnicismos, con foco en el aula.',
+    modules: [
+      { id: 'c2-m1', title: 'Fundamentos digitales', lessons: [
+        V('c2-m1-l1', 'Entornos virtuales de aprendizaje', 12, v(1), 'Organiza tu curso virtual: estructura, comunicación y actividades en plataformas como Moodle o Classroom.',
+          'Un entorno virtual exitoso tiene tres capas: información (programa y recursos), interacción (foros y mensajería) y evaluación (tareas y rúbricas). Publica un "mapa del curso" con la ruta completa de aprendizaje. Material: checklist de configuración inicial de aula virtual.'),
+        V('c2-m1-l2', 'Comunicación y colaboración en línea', 9, v(2), 'Foros que generan conversación, documentos compartidos y trabajo en equipo remoto.',
+          'Diseña consignas de foro que exijan argumentar con evidencia y responder a un compañero. Para trabajo colaborativo, asigna roles rotativos dentro de cada documento compartido. Material: banco de consignas de foro por nivel educativo.'),
+      ]},
+      { id: 'c2-m2', title: 'Creación de recursos', lessons: [
+        V('c2-m2-l1', 'Presentaciones interactivas', 10, v(3), 'De diapositivas pasivas a experiencias interactivas: preguntas en vivo, encuestas y pizarras compartidas.',
+          'Convierte tu presentación en un diálogo: inserta preguntas de opción múltiple en vivo, nubes de palabras y pizarras colaborativas. La regla: una interacción cada 10 minutos. Material: tutorial en video de 3 herramientas gratuitas.'),
+        V('c2-m2-l2', 'Videos educativos', 13, v(4), 'Planifica, graba y edita microvideos efectivos de menos de 10 minutos.',
+          'El microvideo ideal dura menos de 10 minutos, tiene un objetivo único y usa preguntas embebidas. Graba con luz frontal, micrófono cercano y lenguaje conversacional. Material: guion tipo + checklist de producción.'),
+        V('c2-m2-l3', 'Evaluaciones digitales', 8, v(5), 'Cuestionarios en línea, bancos de preguntas y análisis de resultados.',
+          'Configura bancos de preguntas con aleatorización para reducir copia, y analiza los reportes de respuesta para ajustar tu siguiente clase. Material: guía de configuración de evaluación en línea con resultados automáticos.'),
+        V('c2-m2-l4', 'Inteligencia artificial como asistente docente', 15, v(6), 'Usos prácticos y responsables de la IA: planificación, retroalimentación y generación de recursos.',
+          'La IA puede ayudarte a generar borradores de planificaciones, rúbricas y ejercicios diferenciados. Siempre revisa, adapta y verifica el contenido generado, y declara su uso cuando corresponda. Material: biblioteca de prompts docentes listos para usar.'),
+      ]},
+    ]
+  },
+  {
+    id: 'c3', title: 'Evaluación por Competencias',
+    category: 'Evaluación', level: 'Intermedio', hours: 8,
+    cover: '/img/covers/c3.jpg', instructorId: 'u-maria', published: true, createdAt: '2026-02-01T10:00:00.000Z',
+    description: 'Pasa de calificar a evaluar aprendizajes profundos: evaluación auténtica, rúbricas bien diseñadas, instrumentos diversificados y retroalimentación que realmente mejora el desempeño.',
+    modules: [
+      { id: 'c3-m1', title: 'Conceptos y diseño', lessons: [
+        V('c3-m1-l1', 'De la calificación a la evaluación auténtica', 10, v(7), '¿Qué significa evaluar competencias? Tareas auténticas, criterios y evidencias.',
+          'La evaluación auténtica pide al estudiante demostrar la competencia en tareas cercanas a la vida real: resolver, crear, argumentar. Define primero el desempeño esperado y luego diseña la tarea. Material: tabla comparativa entre evaluación tradicional y auténtica.'),
+        V('c3-m1-l2', 'Diseño de rúbricas', 12, v(8), 'Construye rúbricas analíticas y holísticas con criterios claros y niveles bien diferenciados.',
+          'Una buena rúbrica describe comportamientos observables en cada nivel, no adjetivos vagos. Redáctala en lenguaje de estudiante y úsala antes, durante y después de la tarea. Material: 5 plantillas de rúbrica editables por asignatura.'),
+      ]},
+      { id: 'c3-m2', title: 'Instrumentos y retroalimentación', lessons: [
+        V('c3-m2-l1', 'Instrumentos de evaluación diversificados', 9, v(9), 'Portafolios, simulaciones, proyectos y observación: cómo elegir el instrumento correcto.',
+          'Cada competencia pide un instrumento: portafolio para procesos, simulación para desempeños, prueba de desempeño para procedimientos. Diversifica para que todos los estudiantes puedan demostrar su aprendizaje. Material: árbol de decisión para elegir instrumento.'),
+        V('c3-m2-l2', 'Retroalimentación efectiva', 11, v(0), 'El modelo de retroalimentación que sí mueve el aprendizaje: dónde estoy, a dónde voy, cómo llego.',
+          'Usa el modelo de los tres pasos: ¿dónde estoy? (estado actual), ¿a dónde voy? (meta), ¿cómo llego? (próximo paso concreto). La retroalimentación debe ser específica, oportuna y accionable. Material: frases modelo y guión de conversación de retroalimentación.'),
+        V('c3-m2-l3', 'Autoevaluación y evaluación entre pares', 8, v(1), 'Estrategias para que los estudiantes evalúen su propio proceso y el de sus pares con criterio.',
+          'Enséñales a usar la rúbrica: primero autoevalúan con evidencia, luego coevalúan de forma anónima y estructurada. La meta es la autonomía evaluativa. Material: protocolo de coevaluación paso a paso.'),
+      ]},
+    ]
+  },
+  {
+    id: 'c4', title: 'Inclusión Educativa y Atención a la Diversidad',
+    category: 'Inclusión', level: 'Intermedio', hours: 12,
+    cover: '/img/covers/c4.jpg', instructorId: 'u-maria', published: true, createdAt: '2026-02-10T10:00:00.000Z',
+    description: 'Construye aulas donde todos aprenden: Diseño Universal para el Aprendizaje, adecuaciones curriculares, estrategias para necesidades educativas especiales y trabajo colaborativo con familias.',
+    modules: [
+      { id: 'c4-m1', title: 'Marco conceptual', lessons: [
+        V('c4-m1-l1', 'Diversidad, equidad e inclusión', 11, v(2), 'Conceptos fundantes y el modelo social de la discapacidad en la escuela.',
+          'La inclusión no es integrar a alguien a un sistema que no cambia: es transformar el sistema para que nadie quede fuera. Distingue entre igualdad (mismo trato), equidad (lo que cada uno necesita) e inclusión (participación plena). Material: glosario inclusivo y casos para reflexionar.'),
+        V('c4-m1-l2', 'Diseño Universal para el Aprendizaje (DUA)', 14, v(3), 'Los tres principios del DUA: múltiples formas de representación, acción y expresión, y motivación.',
+          'El DUA propone eliminar barreras de entrada: presenta la información de múltiples formas (visual, auditiva, kinestésica), permite múltiples formas de demostrar lo aprendido y activa el interés con opciones y relevancia. Material: checklist DUA para planificar una clase.'),
+      ]},
+      { id: 'c4-m2', title: 'Estrategias de aula', lessons: [
+        V('c4-m2-l1', 'Adecuaciones curriculares', 12, v(4), 'Cómo ajustar objetivos, metodología y evaluación sin bajar el nivel de expectativas.',
+          'Las adecuaciones pueden ser de acceso (recursos, tiempos, apoyos) o curriculares (priorizar objetivos, ajustar metodología). Siempre parte de las fortalezas del estudiante y mantén altas expectativas. Material: formato de adecuación curricular individual.'),
+        V('c4-m2-l2', 'Estrategias para necesidades educativas especiales', 15, v(5), 'TEA, TDAH, dislexia y otras NEE: apoyos concretos que funcionan en el aula regular.',
+          'Apoyos universales: instrucciones claras y en pasos, agendas visuales, tiempos extendidos, espacios con menos estímulos distractores, y comunicación con el especialista del PIE. Material: ficha de apoyos por necesidad educativa.'),
+        V('c4-m2-l3', 'Aprendizaje cooperativo inclusivo', 10, v(6), 'Estructuras cooperativas que aseguran participación real de todos los estudiantes.',
+          'Usa estructuras como "cabezas numeradas" o "1-2-4" que obligan a que todos piensen y participen, y asigna roles complementarios rotativos. La interdependencia positiva es la clave. Material: catálogo de 10 estructuras cooperativas.'),
+      ]},
+      { id: 'c4-m3', title: 'Comunidad educativa', lessons: [
+        V('c4-m3-l1', 'Trabajo con familias', 9, v(7), 'Alianzas familia-escuela: comunicación positiva y participación en el proceso.',
+          'Contacta a las familias con noticias positivas antes que con problemas, usa un lenguaje libre de tecnicismos y construye metas conjuntas. La familia es aliada del proceso, no destinataria de diagnósticos. Material: guión de primera reunión de alianza.'),
+        V('c4-m3-l2', 'Convivencia y cultura inclusiva', 8, v(8), 'Indicadores de una cultura escolar inclusiva y cómo impulsarla desde el aula.',
+          'La cultura inclusiva se ve en el lenguaje, los materiales, los espacios y las celebraciones. Audita tu aula: ¿quién habla, quién lidera, quién aparece en los ejemplos? Material: pauta de autoevaluación de cultura inclusiva del aula.'),
+      ]},
+    ]
+  },
+  {
+    id: 'c5', title: 'Neurociencia y Aprendizaje',
+    category: 'Neuroeducación', level: 'Básico', hours: 6,
+    cover: '/img/covers/c5.jpg', instructorId: 'u-pedro', published: true, createdAt: '2026-02-20T10:00:00.000Z',
+    description: 'Lo que todo docente debería saber sobre el cerebro que aprende: atención, memoria, emoción y estrategias neurodidácticas basadas en evidencia para mejorar tus clases.',
+    modules: [
+      { id: 'c5-m1', title: 'El cerebro que aprende', lessons: [
+        V('c5-m1-l1', 'Bases de la neuroeducación', 10, v(9), 'Qué es (y qué no es) la neuroeducación. Mitos frecuentes y evidencias sólidas.',
+          'La neuroeducación une neurociencia, psicología y pedagogía. Cuidado con los neuromitos: no usamos solo el 10% del cerebro, no hay estilos de aprendizaje "visual/auditivo/kinestésico" demostrados como se popularizan. Material: guía de neuromitos y cómo refutarlos.'),
+        V('c5-m1-l2', 'Atención, memoria y emoción', 13, v(0), 'Cómo funciona la atención selectiva, la memoria de trabajo y el rol de la emoción en el aprendizaje.',
+          'La atención dura entre 10 y 15 minutos sostenida; luego necesita un cambio de actividad o un "gancho" emocional. La emoción marca qué se consolida en memoria a largo plazo: las experiencias con carga emocional se recuerdan más. Material: cronograma de clase neuroamigable.'),
+      ]},
+      { id: 'c5-m2', title: 'Aplicación en el aula', lessons: [
+        V('c5-m2-l1', 'El cerebro adolescente', 9, v(1), 'Poda sináptica, sistema de recompensa y sueño: por qué los adolescentes aprenden distinto.',
+          'El cerebro adolescente tiene un sistema de recompensa hiperactivo y una corteza prefrontal en construcción: por eso el riesgo, la novedad y lo social los motivan tanto. Usa la novedad y el aprendizaje entre pares a tu favor. Material: infografía del cerebro adolescente para compartir con colegas.'),
+        V('c5-m2-l2', 'Estrategias neurodidácticas', 12, v(2), 'Práctica espaciada, recuperación activa, intercalado y sueño: las 4 estrategias con más evidencia.',
+          'Cuatro estrategias con respaldo científico: 1) practicar en sesiones espaciadas, 2) recuperar activamente (autoevaluarse en vez de releer), 3) intercalar temas, 4) respetar el sueño (se consolida la memoria al dormir). Material: planificador semanal de práctica espaciada.'),
+      ]},
+    ]
+  },
+  {
+    id: 'c6', title: 'Gestión del Aula y Convivencia Escolar',
+    category: 'Convivencia', level: 'Básico', hours: 8,
+    cover: '/img/covers/c6.jpg', instructorId: 'u-maria', published: true, createdAt: '2026-03-01T10:00:00.000Z',
+    description: 'Herramientas prácticas para construir un clima de aula positivo: normas y rutinas, manejo de conflictos, mediación entre pares, prevención del acoso y cuidado de tus propias emociones como docente.',
+    modules: [
+      { id: 'c6-m1', title: 'Clima de aula', lessons: [
+        V('c6-m1-l1', 'Construyendo un clima positivo', 10, v(3), 'La relación pedagógica como base: presencia, predictibilidad y reconocimiento.',
+          'El clima se construye con microinteracciones diarias: saludo personalizado, reconocimiento de logros específicos y rutinas predecibles. Un aula segura emocionalmente aprende más. Material: rúbrica de clima de aula + ideas de rutinas de entrada y salida.'),
+        V('c6-m1-l2', 'Normas y rutinas', 8, v(4), 'Cómo co-construir normas con el curso y establecer rutinas que funcionan.',
+          'Las normas se acuerdan, se visualizan y se practican. Define 3 a 5 normas positivas (en lugar de prohibiciones) y enséñalas como se enseña cualquier contenido. Material: protocolo de construcción participativa de normas.'),
+      ]},
+      { id: 'c6-m2', title: 'Manejo de conflictos', lessons: [
+        V('c6-m2-l1', 'Mediación entre pares', 12, v(5), 'El método de mediación escolar y el rol del docente mediador.',
+          'La mediación tiene fases: preparar el espacio, escuchar a cada parte, identificar intereses, generar opciones y acordar compromisos. El docente no impone: facilita que las partes resuelvan. Material: guión de mediación + registro de acuerdos.'),
+        V('c6-m2-l2', 'Protocolos de convivencia escolar', 9, v(6), 'Cómo aplicar el protocolo institucional ante faltas: medidas formativas, reparatorias y seguimiento.',
+          'Conoce el protocolo de tu establecimiento: toda falta tiene respuesta formativa y, cuando corresponde, reparatoria. Documenta los hechos con objetividad y comunica oportunamente a las familias. Material: flujo de actuación ante faltas leves, graves y gravísimas.'),
+        V('c6-m2-l3', 'Prevención del acoso escolar', 14, v(7), 'Claves para detectar, prevenir y actuar frente al acoso escolar (bullying).',
+          'El acoso es sistemático, intencional y asimétrico. Prevención: clima positivo, educación emocional y vigilancia de espacios no supervisados. Detección: cambios de conducta, ausencias y silencios. Material: pauta de detección temprana y entrevista a víctima, agresor y testigos.'),
+        V('c6-m2-l4', 'Habilidades socioemocionales del docente', 11, v(8), 'Autocuidado, gestión del estrés y desgaste profesional: cuídate para cuidar.',
+          'El bienestar docente es condición del bienestar estudiantil. Practica la autorregulación (respiración, pausas), construye comunidad con colegas y establece límites saludables entre trabajo y vida personal. Material: plan personal de autocuidado semanal.'),
+      ]},
+    ]
+  }
+];
+
+const enrollments = [
+  // Carlos: avanzado en c1, completó c5, recién inscrito en c3
+  { id: 'e1', userId: 'u-carlos', courseId: 'c1', enrolledAt: '2026-06-02T10:00:00.000Z', completedLessons: ['c1-m1-l1','c1-m1-l2','c1-m1-l3','c1-m2-l1','c1-m2-l2'], completedAt: null },
+  { id: 'e2', userId: 'u-carlos', courseId: 'c5', enrolledAt: '2026-05-10T10:00:00.000Z', completedLessons: ['c5-m1-l1','c5-m1-l2','c5-m2-l1','c5-m2-l2'], completedAt: '2026-06-20T15:30:00.000Z' },
+  { id: 'e3', userId: 'u-carlos', courseId: 'c3', enrolledAt: '2026-08-20T10:00:00.000Z', completedLessons: [], completedAt: null },
+  // Ana: completó c2, avanzada en c6
+  { id: 'e4', userId: 'u-ana', courseId: 'c2', enrolledAt: '2026-04-01T10:00:00.000Z', completedLessons: ['c2-m1-l1','c2-m1-l2','c2-m2-l1','c2-m2-l2','c2-m2-l3','c2-m2-l4'], completedAt: '2026-07-12T12:00:00.000Z' },
+  { id: 'e5', userId: 'u-ana', courseId: 'c6', enrolledAt: '2026-08-01T10:00:00.000Z', completedLessons: ['c6-m1-l1','c6-m1-l2','c6-m2-l1'], completedAt: null },
+  // Luis: recién comienza c4 y c2
+  { id: 'e6', userId: 'u-luis', courseId: 'c4', enrolledAt: '2026-08-10T10:00:00.000Z', completedLessons: ['c4-m1-l1','c4-m1-l2'], completedAt: null },
+  { id: 'e7', userId: 'u-luis', courseId: 'c2', enrolledAt: '2026-08-25T10:00:00.000Z', completedLessons: [], completedAt: null },
+  // Valentina: completó c1
+  { id: 'e8', userId: 'u-valen', courseId: 'c1', enrolledAt: '2026-05-20T10:00:00.000Z', completedLessons: ['c1-m1-l1','c1-m1-l2','c1-m1-l3','c1-m2-l1','c1-m2-l2','c1-m2-l3','c1-m3-l1','c1-m3-l2'], completedAt: '2026-08-05T16:00:00.000Z' },
+];
+
+const certificates = [
+  { id: 'cert-1', userId: 'u-carlos', courseId: 'c5', issuedAt: '2026-06-20T15:30:00.000Z', code: 'AD-2026-0001' },
+  { id: 'cert-2', userId: 'u-ana', courseId: 'c2', issuedAt: '2026-07-12T12:00:00.000Z', code: 'AD-2026-0002' },
+  { id: 'cert-3', userId: 'u-valen', courseId: 'c1', issuedAt: '2026-08-05T16:00:00.000Z', code: 'AD-2026-0003' },
+];
+
+module.exports = { users, courses, enrollments, certificates };
