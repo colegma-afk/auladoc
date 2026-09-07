@@ -1,5 +1,5 @@
 // ============================================================
-// AulaEduc — Servidor (API REST + archivos estáticos)
+// AulaEdUC — Servidor (API REST + archivos estáticos)
 // ============================================================
 const express = require('express');
 const path = require('path');
@@ -439,6 +439,6 @@ app.use((req, res, next) => {
 });
 
 app.listen(PORT, '0.0.0.0', () => {
-  console.log(`AulaEduc corriendo en http://0.0.0.0:${PORT}`);
+  console.log(`AulaEdUC corriendo en http://0.0.0.0:${PORT}`);
   console.log(`Usuarios demo: admin@aulaeduc.cl/1234B · maria@aulaeduc.cl/docente123 · carlos@aulaeduc.cl/alumno123`);
 });

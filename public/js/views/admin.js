@@ -1,5 +1,5 @@
 // ============================================================
-// AulaEduc — Vistas de administración (stats, usuarios, cursos)
+// AulaEdUC — Vistas de administración (stats, usuarios, cursos)
 // ============================================================
 const Admin = {
   // ================= Panel de estadísticas =================

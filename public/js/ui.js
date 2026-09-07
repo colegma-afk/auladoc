@@ -1,5 +1,5 @@
 // ============================================================
-// AulaEduc — UI helpers (iconos, toasts, modales, componentes)
+// AulaEdUC — UI helpers (iconos, toasts, modales, componentes)
 // ============================================================
 const UI = {};
 

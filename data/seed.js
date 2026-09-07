@@ -1,5 +1,5 @@
 // ============================================================
-// AulaEduc — Datos de ejemplo (se usan si no existe data/db.json)
+// AulaEdUC — Datos de ejemplo (se usan si no existe data/db.json)
 // ============================================================
 
 const V = (id, title, minutes, video, description, material) => ({

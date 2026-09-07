@@ -1,5 +1,5 @@
 // ============================================================
-// AulaEduc — Vista: Catálogo de cursos
+// AulaEdUC — Vista: Catálogo de cursos
 // ============================================================
 const Catalog = {
   state: { q: '', cat: 'Todas', level: 'Todos' },

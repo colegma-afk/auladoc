@@ -1,7 +1,7 @@
 {
   "name": "auladoc",
   "version": "1.0.0",
-  "description": "AulaEduc — Plataforma de Capacitación Docente (LMS interna)",
+  "description": "AulaEdUC — Plataforma de Capacitación Docente (LMS interna)",
   "main": "server.js",
   "scripts": {
     "start": "node server.js",

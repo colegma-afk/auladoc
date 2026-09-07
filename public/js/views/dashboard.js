@@ -1,5 +1,5 @@
 // ============================================================
-// AulaEduc — Vista: Inicio (dashboard personal)
+// AulaEdUC — Vista: Inicio (dashboard personal)
 // ============================================================
 const Dashboard = {
   async render() {

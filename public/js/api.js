@@ -1,5 +1,5 @@
 // ============================================================
-// AulaEduc — Cliente API + estado
+// AulaEdUC — Cliente API + estado
 // ============================================================
 const API = {
   token: localStorage.getItem('ad_token') || '',
