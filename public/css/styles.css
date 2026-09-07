@@ -157,7 +157,7 @@ table.tbl { width: 100%; border-collapse: collapse; font-size: 14px; }
 .brand-name { font-size: 18px; font-weight: 800; letter-spacing: -.02em; }
 .brand-name em, .mobile-top .b em { font-style: normal; }
 .brand-name .acc-d, .mobile-top .b .acc-d { color: #F6AE18; }
-.brand-name .acc-uc, .mobile-top .b .acc-uc { color: #001E36; }
+.brand-name .acc-uc, .mobile-top .b .acc-uc { color: #001E36; font-weight: 900; }
 .brand-sub { font-size: 11px; color: var(--muted); font-weight: 500; }
 
 .sidebar-nav { flex: 1; overflow-y: auto; padding: 6px 12px 20px; }
