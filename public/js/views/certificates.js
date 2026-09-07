@@ -68,7 +68,7 @@ const Certificates = {
             <div class="cert-sign">
               <div class="line"></div>
               <b>Dirección Académica</b>
-              <small>AulaE<span style="color:#F97316">d</span><span style="color:#F59E0B">UC</span></small>
+              <small>AulaE<span style="color:#F6AE18">d</span><span style="color:#001E36">UC</span></small>
             </div>
           </div>
           <div class="cert-code">CÓDIGO: ${ct.code} · EMITIDO EL ${new Date(ct.issuedAt).toLocaleDateString('es-CL').toUpperCase()} · VALIDABLE EN AULAEDUC.CL</div>
