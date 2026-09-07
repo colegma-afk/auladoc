@@ -153,7 +153,8 @@ const courses = [
       { id: 'c5-m2', title: 'Aplicación en el aula', lessons: [
         V('c5-m2-l1', 'Clase 3 · La Emoción', 36, '/media/neurociencia-v3.mp4', 'La amígdala y el clima emocional seguro: estrés, curiosidad, música, semáforo emocional, check-in, menú de calma, bienestar docente y convivencia.',
           'Video completo de 36 minutos con semáforo emocional guiado y 4 prácticas. Descarga la guía: https://aulaeduc.onrender.com/media/materiales/material-clase3-emocion.pdf'),
-        V('c5-m2-l2', 'Estrategias neurodidácticas', 12, v(2), 'Práctica espaciada, recuperación activa, intercalado y sueño: las 4 estrategias con más evidencia.',
+        V('c5-m2-l2', 'Clase 4 · El Sueño', 38, '/media/neurociencia-v4.mp4', 'El sueño como aliado del aprendizaje: ciclos y fases, consolidación de la memoria, regulación emocional y atencional, higiene del sueño, rutinas con las familias, mitos frecuentes y el descanso del propio docente.',
+          'Video completo de 38 minutos con relajación guiada y 4 prácticas. Descarga la guía: https://aulaeduc.onrender.com/media/materiales/material-clase4-sueno.pdf'), 'Práctica espaciada, recuperación activa, intercalado y sueño: las 4 estrategias con más evidencia.',
           'Cuatro estrategias con respaldo científico: 1) practicar en sesiones espaciadas, 2) recuperar activamente (autoevaluarse en vez de releer), 3) intercalar temas, 4) respetar el sueño (se consolida la memoria al dormir). Material: planificador semanal de práctica espaciada.'),
       ]},
     ]
