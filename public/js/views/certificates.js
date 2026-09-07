@@ -1,5 +1,5 @@
 // ============================================================
-// AulaDoc — Vistas: Certificados (lista + documento imprimible)
+// AulaEduc — Vistas: Certificados (lista + documento imprimible)
 // ============================================================
 const Certificates = {
   async list() {
@@ -52,7 +52,7 @@ const Certificates = {
       <div class="cert-page">
         <div class="cert-inner">
           <div class="cert-logo">${UI.ICONS.logo}</div>
-          <div class="cert-kicker">AulaDoc · Plataforma de Capacitación Docente</div>
+          <div class="cert-kicker">AulaEduc · Plataforma de Capacitación Docente</div>
           <div class="cert-kicker" style="letter-spacing:.18em;font-size:11px;color:var(--indigo-600)">Certificado de Finalización</div>
           <p class="cert-for" style="margin-top:10px">Se certifica que</p>
           <div class="cert-name">${me.name}</div>
@@ -68,7 +68,7 @@ const Certificates = {
             <div class="cert-sign">
               <div class="line"></div>
               <b>Dirección Académica</b>
-              <small>AulaDoc</small>
+              <small>AulaEduc</small>
             </div>
           </div>
           <div class="cert-code">CÓDIGO: ${ct.code} · EMITIDO EL ${new Date(ct.issuedAt).toLocaleDateString('es-CL').toUpperCase()} · VALIDABLE EN AULADOC.CL</div>

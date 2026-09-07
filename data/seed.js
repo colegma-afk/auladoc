@@ -1,5 +1,5 @@
 // ============================================================
-// AulaDoc — Datos de ejemplo (se usan si no existe data/db.json)
+// AulaEduc — Datos de ejemplo (se usan si no existe data/db.json)
 // ============================================================
 
 const V = (id, title, minutes, video, description, material) => ({
@@ -24,13 +24,13 @@ const VIDS = [
 const v = i => VIDS[i % VIDS.length];
 
 const users = [
-  { id: 'u-admin',  name: 'Sofía Herrera',  email: 'admin@auladoc.cl',   password: '1234B',   role: 'admin',       createdAt: '2026-01-05T10:00:00.000Z' },
-  { id: 'u-maria',  name: 'María González', email: 'maria@auladoc.cl',   password: 'docente123', role: 'instructor',  createdAt: '2026-01-12T10:00:00.000Z' },
-  { id: 'u-pedro',  name: 'Pedro Ramírez',  email: 'pedro@auladoc.cl',   password: 'docente123', role: 'instructor',  createdAt: '2026-01-12T10:00:00.000Z' },
-  { id: 'u-carlos', name: 'Carlos Pérez',   email: 'carlos@auladoc.cl',  password: 'alumno123',  role: 'colaborador', createdAt: '2026-02-02T10:00:00.000Z' },
-  { id: 'u-ana',    name: 'Ana Torres',     email: 'ana@auladoc.cl',     password: 'alumno123',  role: 'colaborador', createdAt: '2026-02-10T10:00:00.000Z' },
-  { id: 'u-luis',   name: 'Luis Fuentes',   email: 'luis@auladoc.cl',    password: 'alumno123',  role: 'colaborador', createdAt: '2026-03-01T10:00:00.000Z' },
-  { id: 'u-valen',  name: 'Valentina Rojas',email: 'valentina@auladoc.cl', password: 'alumno123', role: 'colaborador', createdAt: '2026-03-18T10:00:00.000Z' }
+  { id: 'u-admin',  name: 'Sofía Herrera',  email: 'admin@aulaeduc.cl',   password: '1234B',   role: 'admin',       createdAt: '2026-01-05T10:00:00.000Z' },
+  { id: 'u-maria',  name: 'María González', email: 'maria@aulaeduc.cl',   password: 'docente123', role: 'instructor',  createdAt: '2026-01-12T10:00:00.000Z' },
+  { id: 'u-pedro',  name: 'Pedro Ramírez',  email: 'pedro@aulaeduc.cl',   password: 'docente123', role: 'instructor',  createdAt: '2026-01-12T10:00:00.000Z' },
+  { id: 'u-carlos', name: 'Carlos Pérez',   email: 'carlos@aulaeduc.cl',  password: 'alumno123',  role: 'colaborador', createdAt: '2026-02-02T10:00:00.000Z' },
+  { id: 'u-ana',    name: 'Ana Torres',     email: 'ana@aulaeduc.cl',     password: 'alumno123',  role: 'colaborador', createdAt: '2026-02-10T10:00:00.000Z' },
+  { id: 'u-luis',   name: 'Luis Fuentes',   email: 'luis@aulaeduc.cl',    password: 'alumno123',  role: 'colaborador', createdAt: '2026-03-01T10:00:00.000Z' },
+  { id: 'u-valen',  name: 'Valentina Rojas',email: 'valentina@aulaeduc.cl', password: 'alumno123', role: 'colaborador', createdAt: '2026-03-18T10:00:00.000Z' }
 ];
 
 const courses = [

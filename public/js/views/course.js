@@ -1,5 +1,5 @@
 // ============================================================
-// AulaDoc — Vistas: Detalle de curso + Reproductor de lecciones
+// AulaEduc — Vistas: Detalle de curso + Reproductor de lecciones
 // ============================================================
 const Course = {
   // ---------- Detalle ----------

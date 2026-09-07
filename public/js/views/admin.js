@@ -1,5 +1,5 @@
 // ============================================================
-// AulaDoc — Vistas de administración (stats, usuarios, cursos)
+// AulaEduc — Vistas de administración (stats, usuarios, cursos)
 // ============================================================
 const Admin = {
   // ================= Panel de estadísticas =================
@@ -149,7 +149,7 @@ const Admin = {
   userModal() {
     UI.openModal('Nuevo usuario', `
       <div class="field"><label>Nombre completo</label><input class="input" id="nuName" placeholder="Ej: Paula Soto"></div>
-      <div class="field"><label>Correo electrónico</label><input class="input" id="nuEmail" type="email" placeholder="correo@auladoc.cl"></div>
+      <div class="field"><label>Correo electrónico</label><input class="input" id="nuEmail" type="email" placeholder="correo@aulaeduc.cl"></div>
       <div class="row">
         <div class="field"><label>Contraseña</label><input class="input" id="nuPass" type="text" placeholder="mínimo 6 caracteres"></div>
         <div class="field"><label>Rol</label>

@@ -1,5 +1,5 @@
 // ============================================================
-// AulaDoc — Vista: Mi docencia (instructor)
+// AulaEduc — Vista: Mi docencia (instructor)
 // ============================================================
 const Instructor = {
   async render() {

@@ -1,5 +1,5 @@
 // ============================================================
-// AulaDoc — Aplicación principal (enrutador + shell)
+// AulaEduc — Aplicación principal (enrutador + shell)
 // ============================================================
 (async function init() {
   // Sesión
